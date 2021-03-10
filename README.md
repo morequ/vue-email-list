@@ -23,7 +23,7 @@ yarn lint
 ### Dockerizing development environment
 From project root run:
 ```
-docker-compose -f docker/docker-compose.prod.yml up --build
+docker-compose -f docker/docker-compose.yml up --build
 ```
 
 ### Dockerizing for production
