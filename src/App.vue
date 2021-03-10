@@ -1,6 +1,9 @@
 <template>
   <div class="container">
     <Header @toggle-add-email="toggleAddEmail" title="Email List"></Header>
+    <div v-show="showAddEmail">
+      <AddEmail @add-email="addEmail" />
+    </div>
     <EmailList  @delete-email="deleteEmail" :emails="emails" />
   </div>
 </template>
@@ -8,12 +11,14 @@
 <script>
 import Header from './components/Header'
 import EmailList from './components/EmailList'
+import AddEmail from './components/AddEmail'
 
 export default {
   name: 'App',
   components: {
     Header,
-    EmailList
+    EmailList,
+    AddEmail
   },
   data() {
     return {
@@ -25,6 +30,9 @@ export default {
     toggleAddEmail() {
       this.showAddEmail = !this.showAddEmail
       console.log('Add new Email')
+    },
+    addEmail(email) {
+      this.emails = [...this.emails, email]
     },
     deleteEmail(id) {
       if(confirm('Are you sure?'))
