@@ -1,5 +1,17 @@
 # vue-email-list
 
+- [X] Project Scaffolding
+- [X] Add Email
+- [X] Remove Email
+- [X] Email Listing
+- [X] Dockerization
+- [ ] CSV export
+
+## Spent Time
+- Getting up to speed with Vue.js: ~ 1:50 (Youtube)
+- Development: ~ 3 hours
+- Expected required time to finish up: ~ 2 hours
+
 ## Project setup
 ```
 yarn install
@@ -30,7 +42,7 @@ docker-compose -f docker/docker-compose.yml up --build
 From project root run:
 ```
 docker-compose -f docker/docker-compose.prod.yml up --build‍‍
-‍‍‍‍‍‍
+‍‍‍‍
 ```
 
 ### Customize configuration
