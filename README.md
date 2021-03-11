@@ -5,12 +5,12 @@
 - [X] Remove Email
 - [X] Email Listing
 - [X] Dockerization
-- [ ] CSV export
+- [X] Vue Route
+- [X] CSV export
 
 ## Spent Time
 - Getting up to speed with Vue.js: ~ 1:50 (Youtube)
-- Development: ~ 3 hours
-- Expected required time to finish up: ~ 2 hours
+- Development: ~ 4:30 hours
 
 ## Project setup
 ```
