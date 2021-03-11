@@ -1,26 +1,23 @@
 <template>
-    <header>
-        <h1>{{ title }}</h1>
-        <Button @toggle-add-email="$emit('toggle-add-email')" text="Add New Email" color="green" />
-    </header>
+  <header>
+    <h1>{{ title }}</h1>
+    <slot></slot>
+  </header>
 </template>
 
 <script>
-import Button from './Button'
-
-export default ({
-    name: 'Header',
-    props: ['title'],
-    components: {
-        Button
-    }
-})
+export default {
+  name: "Header",
+  props: ["title"],
+  components: {},
+};
 </script>
 
 <style scoped>
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
 </style>
