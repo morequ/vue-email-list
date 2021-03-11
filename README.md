@@ -35,13 +35,15 @@ yarn lint
 ### Dockerizing development environment
 From project root run:
 ```
-docker-compose -f docker/docker-compose.yml up --build
+docker-compose -f docker/docker-compose.yml build --no-cache
+docker-compose -f docker/docker-compose.yml up
 ```
 
 ### Dockerizing for production
 From project root run:
 ```
-docker-compose -f docker/docker-compose.prod.yml up --build‍‍
+docker-compose -f docker/docker-compose.prod.yml build --no-cache
+docker-compose -f docker/docker-compose.prod.yml up 
 ‍‍‍‍
 ```
 
